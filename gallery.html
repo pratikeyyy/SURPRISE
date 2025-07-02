@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MADAM JII</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: #000;
+        overflow-x: hidden;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+    h1 {
+        text-align: center;
+        margin: 20px;
+        font-size: 3rem;
+        color: #ff90b3;
+        animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+        from { text-shadow: 0 0 10px #ff90b3; }
+        to { text-shadow: 0 0 30px #fff, 0 0 60px #ff90b3; }
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+    }
+.gallery img {
+      width: 300px;
+      height: 250px;
+      object-fit: contain;
+      background: #111;
+      border: 2px solid #ff8aa1;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #ff8aa1;
+      transition: transform 0.5s;
+    }
+
+    .photo-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        overflow: hidden;
+        width: 280px;
+        box-shadow: 0 0 20px rgba(255, 144, 179, 0.5);
+        transition: transform 0.4s;
+    }
+    .photo-card:hover {
+        transform: scale(1.05);
+    }
+    .photo-card img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+    }
+    .shayari {
+        padding: 15px;
+        text-align: center;
+        animation: fadeIn 2s ease;
+    }
+    .shayari p {
+        margin: 5px 0;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px);}
+        to { opacity: 1; transform: translateY(0);}
+    }
+
+    /* Floating Hearts */
+    .hearts {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    .hearts span {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: url('hearts.jpg') no-repeat center/contain;
+        animation: floatHearts 8s linear infinite;
+    }
+    @keyframes floatHearts {
+        0% { transform: translateY(0) rotate(0deg); opacity:1;}
+        100% { transform: translateY(-1000px) rotate(360deg); opacity:0;}
+    }
+
+    /* Sparkles */
+    .spark {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: white;
+        border-radius: 50%;
+        opacity: 0;
+        animation: sparkle 1.5s infinite;
+    }
+    @keyframes sparkle {
+        0% { transform: scale(0); opacity:0;}
+        50% { transform: scale(1); opacity:1;}
+        100% { transform: scale(0); opacity:0;}
+    }
+
+    .nav-buttons {
+        text-align: center;
+        margin: 20px;
+    }
+    .nav-buttons a {
+        padding: 10px 20px;
+        background: #ff90b3;
+        color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        margin: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        transition: 0.3s;
+    }
+    .nav-buttons a:hover {
+        background: #ff60a0;
+        transform: scale(1.1);
+    }
+
+</style>
+</head>
+
+<body>
+
+<h1>❤️ MADAM JII ❤️</h1>
+
+<div class="nav-buttons">
+    <a href="birthday.html">🏠 Back to Home</a>
+  
+</div>
+
+<div class="gallery">
+    <div class="photo-card">
+        <img src="DEEDAR/simplicity.jpg" alt="">
+        <div class="shayari">
+            <p>“Tere hone se hi meri duniya hai...”</p>
+            <p>“With you, my world feels complete...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/mehandi cute.jpg" alt="">
+        <div class="shayari">
+            <p>“Meri har khushi ka sabab sirf tu hai...”</p>
+            <p>“You are the reason for every smile I have...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/mehandi cute 2.jpg" alt="">
+        <div class="shayari">
+            <p>“Tu saath hai toh zindagi khoobsurat hai...”</p>
+            <p>“Life is beautiful, just because of you...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/mehandi pointing finger.jpg" alt="">
+        <div class="shayari">
+            <p>“Teri hansi mere dil ka sukoon hai...”</p>
+            <p>“Your smile is the peace to my heart...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/Mehandi gorgeous.jpg" alt="">
+        <div class="shayari">
+            <p>“Jitni baar tujhe dekhu, utni baar pyaar ho...”</p>
+            <p>“Falling in love with you again and again...”</p>
+        </div>
+    </div>
+
+<!-- Keep the same head and existing code -->
+
+<div class="gallery">
+    <!-- Existing 5 Photos -->
+    <div class="photo-card">
+        <img src="DEEDAR/simplicity.jpg" alt="">
+        <div class="shayari">
+            <p>“Tere hone se hi meri duniya hai...”</p>
+            <p>“With you, my world feels complete...”p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/mehandi cute.jpg" alt="">
+        <div class="shayari">
+            <p>“Meri har khushi ka sabab sirf tu hai...”</p>
+            <p>“You are the reason for every smile I have...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/mehandi cute 2.jpg" alt="">
+        <div class="shayari">
+            <p>“Tu saath hai toh zindagi khoobsurat hai...”</p>
+            <p>“Life is beautiful, just because of you...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/mehandi pointing finger.jpg" alt="">
+        <div class="shayari">
+            <p>“Teri hansi mere dil ka sukoon hai...”</p>
+            <p>“Your smile is the peace to my heart...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/Mehandi gorgeous.jpg" alt="">
+        <div class="shayari">
+            <p>“Jitni baar tujhe dekhu, utni baar pyaar ho...”</p>
+            <p>“Falling in love with you again and again...”</p>
+        </div>
+    </div>
+
+    <!-- 🔥 9 More Photos With Shayari -->
+    <div class="photo-card">
+        <img src="DEEDAR/haldi glasses.jpg" alt="">
+        <div class="shayari">
+            <p>“Teri muskaan mere jeene ki wajah hai...”</p>
+            <p>“Your smile is my reason to live...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/haldi hand on waist.jpg" alt="">
+        <div class="shayari">
+            <p>“Tu hai toh sab hai...”</p>
+            <p>“If you are with me, I have everything...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/flower holding.jpg" alt="">
+        <div class="shayari">
+            <p>“Teri ek nazar, dil ko chain de jaye...”</p>
+            <p>“One glance of yours soothes my soul...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/shinyy.jpg" alt="">
+        <div class="shayari">
+            <p>“Tere saath har lamha khubsurat hai...”</p>
+            <p>“Every moment with you is beautiful...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/gorgeous girl.jpg" alt="">
+        <div class="shayari">
+            <p>“Tu jo sharma ke dekhti hai, dil wahi ruk jata hai...”</p>
+            <p>“Your shy smile stops my heartbeat...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/perfect.jpg" alt="">
+        <div class="shayari">
+            <p>“Tu meri duniya ki sabse khoobsurat kahani hai...”</p>
+            <p>“You are the most beautiful story of my life...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/sidee view.jpg" alt="">
+        <div class="shayari">
+            <p>“Tere bina adhura hoon main...”</p>
+            <p>“Without you, I am incomplete...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/funyy.jpg" alt="">
+        <div class="shayari">
+            <p>“Rab se bas tu hi manga hai...”</p>
+            <p>“I asked only you from God...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/pvrr.jpg" alt="">
+        <div class="shayari">
+            <p>“Jab tu paas hoti hai, duniya ruk jati hai...”</p>
+            <p>“When you are near, the world stops...”</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+
+<!-- Floating Hearts -->
+<div class="hearts" id="hearts"></div>
+
+<!-- Sparkles -->
+<div id="sparks"></div>
+
+<script>
+    // Hearts
+    const hearts = document.getElementById('hearts');
+    for(let i = 0; i < 40; i++){
+        const span = document.createElement('span');
+        span.style.left = Math.random() * window.innerWidth + 'px';
+        span.style.top = Math.random() * window.innerHeight + 'px';
+        span.style.animationDelay = (Math.random() * 8) + 's';
+        hearts.appendChild(span);
+    }
+
+    // Sparkles
+    const sparks = document.getElementById('sparks');
+    for(let i = 0; i < 60; i++){
+        const dot = document.createElement('div');
+        dot.classList.add('spark');
+        dot.style.left = Math.random() * window.innerWidth + 'px';
+        dot.style.top = Math.random() * window.innerHeight + 'px';
+        dot.style.animationDelay = (Math.random() * 1.5) + 's';
+        sparks.appendChild(dot);
+    }
+</script>
+<div class="nav-buttons">
+      <a href="OUR MEMORIES.html">➡️ TOGETHER EACH OTHER</a>
+</div>
+</body>
+</html>

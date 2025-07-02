@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our DEEDAR - Ladaku Couple ❤️</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: #000;
+        overflow-x: hidden;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+    h1 {
+        text-align: center;
+        margin: 20px;
+        font-size: 3rem;
+        color: #ff90b3;
+        animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+        from { text-shadow: 0 0 10px #ff90b3; }
+        to { text-shadow: 0 0 30px #fff, 0 0 60px #ff90b3; }
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .photo-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        overflow: hidden;
+        width: 280px;
+        box-shadow: 0 0 20px rgba(255, 144, 179, 0.5);
+        transition: transform 0.4s;
+    }
+    .photo-card:hover {
+        transform: scale(1.05);
+    }
+    .photo-card img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+    }
+    .shayari {
+        padding: 15px;
+        text-align: center;
+        animation: fadeIn 2s ease;
+    }
+    .shayari p {
+        margin: 5px 0;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px);}
+        to { opacity: 1; transform: translateY(0);}
+    }
+
+    /* Floating Hearts */
+    .hearts {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    .hearts span {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: url('hearts.jpg') no-repeat center/contain;
+        animation: floatHearts 8s linear infinite;
+    }
+    @keyframes floatHearts {
+        0% { transform: translateY(0) rotate(0deg); opacity:1;}
+        100% { transform: translateY(-1000px) rotate(360deg); opacity:0;}
+    }
+
+    /* Sparkles */
+    .spark {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: white;
+        border-radius: 50%;
+        opacity: 0;
+        animation: sparkle 1.5s infinite;
+    }
+    @keyframes sparkle {
+        0% { transform: scale(0); opacity:0;}
+        50% { transform: scale(1); opacity:1;}
+        100% { transform: scale(0); opacity:0;}
+    }
+
+    .nav-buttons {
+        text-align: center;
+        margin: 20px;
+    }
+    .nav-buttons a {
+        padding: 10px 20px;
+        background: #ff90b3;
+        color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        margin: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        transition: 0.3s;
+    }
+    .nav-buttons a:hover {
+        background: #ff60a0;
+        transform: scale(1.1);
+    }
+
+</style>
+</head>
+
+<body>
+
+<h1>❤️ Our DEEDAR – Ladaku Couple ❤️</h1>
+
+<div class="nav-buttons">
+    <a href="gallery.html">⬅️ Back to Her Gallery</a>
+</div>
+
+</div>
+<div class="gallery">
+    <!-- 🔥 15 Photos Example -->
+    <div class="photo-card">
+        <img src="DEEDAR/cake eats.jpg" alt="">
+        <h3>KITNI GUSSE </H3>
+        <div class="shayari">
+            <p>“Tu ladti bhi pyaar se hai...”</p>
+            <p>“Even your fights feel like love...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/cake eating 2.jpg" alt="">
+        <H3>
+            FINALLY KHUSH HUI
+        </H3>
+        <div class="shayari">
+            <p>“Jab tu roothi hoti hai, tab aur pyari lagti hai...”</p>
+            <p>“You look even cuter when upset...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/looks at me birthday.jpg" alt="">
+        <H3>KESE GHOOR RHI HO....</H3>
+        <div class="shayari">
+            <p>“Ladai ke beech bhi pyaar hai...”</p>
+            <p>“Even in fights, there’s love...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/cake birthday 3.jpg" alt="">
+        <H3>DO ANJAAN AASHIQ</H3>
+        <div class="shayari">
+            <p>“Tere bina toh ladai bhi adhoori hai...”</p>
+            <p>“Even fights feel incomplete without you...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/cake birthday 2.jpg" alt="">
+        <H3>GUDDI</H3>
+        <div class="shayari">
+            <p>“Roothna manana, pyar ka naya rang hai...”</p>
+            <p>“Fights and patch-ups are new colors of love...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/birthday meet.jpg" alt="">
+        <H3>CUTEEEE</H3>
+        <div class="shayari">
+            <p>“Ladai ho ya pyaar, dono mein tu hi tu...”</p>
+            <p>“Be it fight or love, it’s always you...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/edit cute.jpg" alt="">
+        <H3>HATH DEKHOOO</H3>
+        <div class="shayari">
+            <p>“Tu ladti hai, tab bhi lagti hai cute queen...”</p>
+            <p>“You fight like a queen, but still adorable...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/together 2 ( she looks away).jpg" alt="">
+       <H3>IDHAR DEKH NA...</H3>
+        <div class="shayari">
+            <p>“Tere bina na ladai acchi, na zindagi...”</p>
+            <p>“Without you, neither fights nor life is good...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/together 1.jpg" alt="">
+        <H3>HA HA SORRY..</H3>
+        <div class="shayari">
+            <p>“Ruthna manaana, bas tere saath hi acha lagta hai...”</p>
+            <p>“Only with you, fights and love both feel right...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/together 3.jpg" alt="">
+        <H3>PYARE TO HAI ..</H3>
+        <div class="shayari">
+            <p>“Zyada ladti hai, par bina tere jee nahi paata...”</p>
+            <p>“You fight a lot, but can’t live without you...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/together 4.jpg" alt="">
+        <H3>ANSHU AA GYE</H3>
+        <div class="shayari">
+            <p>“Tere saath ki nok-jhok bhi pyari hai...”</p>
+            <p>“Even arguments with you are adorable...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/together 7.jpg" alt="">
+        <H3>JAANU ..</H3>
+        <div class="shayari">
+            <p>“Ladai se bhi zyada tu hi pyaari hai...”</p>
+            <p>“More than fights, it’s you whom I love...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/together 8.jpg" alt="">
+        <H3>HAA JANUUU</H3>
+        <div class="shayari">
+            <p>“Choti choti baaton pe ladna bhi mohabbat hai...”</p>
+            <p>“Fighting over little things is also love...”</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="DEEDAR/together pvr.jpg" alt="">
+        <H3>LOTS OF LOVEEEE</H3>
+        <div class="shayari">
+            <p>“Har ladai ke baad, pyaar aur gehra hota hai...”</p>
+            <p>“Every fight makes our love stronger...”</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- Floating Hearts -->
+<div class="hearts" id="hearts"></div>
+
+<!-- Sparkles -->
+<div id="sparks"></div>
+
+<script>
+    // Hearts
+    const hearts = document.getElementById('hearts');
+    for(let i = 0; i < 50; i++){
+        const span = document.createElement('span');
+        span.style.left = Math.random() * window.innerWidth + 'px';
+        span.style.top = Math.random() * window.innerHeight + 'px';
+        span.style.animationDelay = (Math.random() * 8) + 's';
+        hearts.appendChild(span);
+    }
+
+    // Sparkles
+    const sparks = document.getElementById('sparks');
+    for(let i = 0; i < 70; i++){
+        const dot = document.createElement('div');
+        dot.classList.add('spark');
+        dot.style.left = Math.random() * window.innerWidth + 'px';
+        dot.style.top = Math.random() * window.innerHeight + 'px';
+        dot.style.animationDelay = (Math.random() * 1.5) + 's';
+        sparks.appendChild(dot);
+    }
+    
+
+</script>
+
+<div class="nav-buttons">
+    <a href="lastpage.html">🎂 Birthday Wish Page</a>
+    </div>
+
+</body>
+</html>
